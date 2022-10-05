@@ -1,0 +1,125 @@
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: white;
+    font-family: 'Times New Roman';
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+main{
+    border: 5px outset black;
+    box-shadow: inset 0 0 8px lightgray,
+            1px 1px 3px darkgray;
+}
+
+
+header{
+    background: #06082f;
+    margin-left: 0px;
+    margin-top:  -10px;
+    margin-right: 0px;
+    box-shadow: inset 0 0 8px lightgray,
+            1px 1px 3px darkgray;
+}
+
+.title{
+    padding-left: 15px;
+    margin-top: 0px;
+
+    color: #fff;
+
+    text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, 
+                 #fff -1px 1px 0, #fff 1px -1px 0;
+}
+
+.menu {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: cursive;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    transition: color 0.5s linear;
+}
+
+.menu:hover{
+    color: #fce38a;
+}
+
+
+.content{
+    border: 3px ridge black;
+    padding-left: 15px;
+}
+
+.my__header{
+    text-shadow: grey 1px 1px 0, grey 2px 2px 0, 
+                 grey 3px 3px 0, grey 4px 4px 0, 
+                 grey 5px 5px 0;
+}
+
+.my__list{
+    list-style-type: none;
+    padding-left: 3px;
+    font-family: cursive;
+}
+
+.info__contact{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s linear;
+}
+
+.info__contact:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+footer{
+    background: #06082f;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 8px lightgray,
+            1px 1px 3px darkgray;
+}
+
+.footer__contacts{
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer__contact{
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    text-decoration: none;
+    transition: color 0.5s linear;
+}
+
+.footer__contact:hover{
+    color: #fce38a;
+    text-decoration: underline;
+}
+
+
+.picture
+{
+    padding-top: 5px;
+    padding-right: 3px;
+    float: right;
+}
+
+p{
+    font-family: cursive;
+}
