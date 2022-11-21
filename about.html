@@ -29,7 +29,12 @@
         var path = window.location.pathname;
         for (let el of Menu) {
             var href = el.getAttribute('href');
-            if(path == '/' + href){
+            var href = el.getAttribute('href');
+			var temp = href.split('/')
+			href = temp[temp.length - 1]
+			temp = path.split('/')
+			path = temp[temp.length - 1]
+            if(path == href){
                 el.classList.add("menu__link_active")
             }
             else{
