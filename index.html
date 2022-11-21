@@ -19,9 +19,9 @@
 	<header>
 		<h1 class="title">Junior Java developer</h1>
 		<nav id="menu">
-				<a class="menu__link" href="/">Резюме</a>
-				<a class="menu__link" href="/about.html">Обо мне</a>
-				<a class="menu__link" href="/dinosaur.html">Динозавр</a>
+				<a class="menu__link" href="index.html">Резюме</a>
+				<a class="menu__link" href="about.html">Обо мне</a>
+				<a class="menu__link" href="dinosaur.html">Динозавр</a>
 		</nav>
 	</header>
 	<script>
@@ -29,7 +29,7 @@
         var path = window.location.pathname;
         for (let el of Menu) {
             var href = el.getAttribute('href');
-            if(path == href){
+            if(path == '/' + href){
                 el.classList.add("menu__link_active")
             }
             else{
