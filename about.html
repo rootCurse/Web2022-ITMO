@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Красильников, Михаил Александрович, Java, junior developer">
+	<link href="src/myStyle.css" rel="stylesheet">
+	<title>Web - программирование</title>
+    <script src="loadPage.js"></script>
+</head>
+<body>
+    <header>
+		<h1 class="title">Junior Java developer</h1>
+		<nav id="menu">
+				<a class="menu__link" href="index.html">Резюме</a>
+				<a class="menu__link" href="about.html">Обо мне</a>
+				<a class="menu__link" href="dinosaur.html">Динозавр</a>
+                <a class="menu__link" href="table.html">Таблица</a>
+		</nav>
+	</header>
+    <script src="menu.js"></script>
+    <main>
+        <article id=aboutMe class="content">
+            <h2 class="my__header">О Себе</h2>
+         <p class="UnofficialText">
+            Немного информации о моем pet проекте. Нам нужно было создать сервис для учета котов каждого пользователя.
+            Данный сервис можно использовать в вет клинике. По пользователю можно получить всю информацию о нем и его котах
+            Реализация содержит использование Spring Framework, а также RabbitMQ.
+            Информация хранится в БД PostgreSQL
+            Пример кода, реализация получение имени кота по его id и пользователю, для проверки, что кот принадлежит этому человеку
+        </p>
+        <pre >
+            <code class="aboutMe__code">
+public String getName(int id, int humanId) {
+var cat = catsDAO.getById(id);
+    if (cat.getHumanByHumansId().getHumanId() != humanId)
+        return null;
+    return cat.getName();
+}
+            </code>
+        </pre>
+            <blockquote>
+                <p>Многие из вас знакомы с достоинствами программиста. Их всего три, и разумеется это: <i>лень,     нетерпеливость и гордыня.</i></p>
+                <cite>Larry Wall</cite>
+            </blockquote>
+        <p class="UnofficialText">
+            Дополнительно, я бы хотел рассказать о ситуации, которая произшла со мной на работе.
+            В середине рабочего дня, у нашего провайдера интернета, произошла авария, из-за которой все наши ПК остались без интернета
+            В это время, наша сотрудница проводила сделку на крупную сумму. В связи с чем, нужно было в кратчайшие сроки наладить сеть
+            Для решения этой проблемы, я купил несколько wi-fi адаптеров и модем, после установки адаптеров работа офиса была<br>
+            восстановлена на время, пока устранялись неполадки с интернетом.
+         </p>
+         <p class="UnofficialText">И в заключении, я бы хотел поделиться моей формулой успешного дня</p>
+         <p class="UnofficialText">C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></p>
+        
+    </article>
+    <div class="galery">
+        <img src="src/g_1.jpg" alt="">
+        <img src="src/g_2.jpg" alt="">
+        <img src="src/g_3.jpg" alt="">
+        <img src="src/g_4.jpg" alt="">
+    </div>
+    </main>
+    <footer>
+        <nav class="footer__contacts">
+            <a class="footer__contact" href="tel:+78001000800">+7 (800) 100-08-00</a>
+            <a class="footer__contact" href="mailto:311543@niuitmo.ru">311543@niuitmo.ru</a>
+            <a class="footer__contact" href="https://github.com/rootCurse">https://github.com/rootCurse</a>
+        </nav>
+        <div id="loader">
+            <p></p>
+        </div>
+    </footer>
+</body>

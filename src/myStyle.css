@@ -1,0 +1,327 @@
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+main{
+    border: 5px outset black;
+    box-shadow: inset 0 0 8px lightgray,
+            1px 1px 3px darkgray;
+    animation: animation 0.7s 10s;
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #06082f;
+    width: 100%;
+    margin-top: -10px;
+    
+    box-shadow: inset 0 0 8px lightgray,
+            1px 1px 3px darkgray;
+    
+}
+
+.title{
+    padding-left: 30px;
+    color: #fff;
+    text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, 
+                 #fff -1px 1px 0, #fff 1px -1px 0;
+}
+
+#aboutAcademy{
+    width: 50%;
+    float: right;
+}
+
+#menu {
+    padding-right: 30px;
+}
+
+.menu__link
+{
+    color: #FFFFFF;
+    font-size: 1em;
+    font-family: cursive;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1vw;
+    transition: color 0.5s linear;
+}
+
+.menu__link:hover{
+    color: #fce38a;
+    text-decoration: underline;
+}
+
+.menu__link_active{
+    text-decoration: underline;
+}
+
+
+.content{
+    padding-left: 15px;
+}
+
+.my__header{
+    font-size: 21px;
+    text-transform: uppercase;
+    text-shadow: grey 1px 1px 0, grey 2px 2px 0, 
+                 grey 3px 3px 0, grey 4px 4px 0, 
+                 grey 5px 5px 0;
+}
+
+.my__list{
+    font-family: 'Kolker Brush';
+    list-style-type: none;
+    padding-left: 3px;
+}
+
+.info__contact{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s linear;
+}
+
+.info__contact:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+footer{
+    margin-bottom: 0px;
+    background: #06082f;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 8px lightgray,
+            1px 1px 3px darkgray;
+}
+
+.footer__contacts{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.footer__contact{
+    color: white;
+    margin: 0 3vw;
+    text-decoration: none;
+    transition: color 0.5s linear;
+}
+
+.footer__contact:hover{
+    color: #fce38a;
+    text-decoration: underline;
+}
+
+
+.picture
+{
+    padding-top: 5px;
+    padding-right: 3px;
+    float: right;
+}
+
+.picture__cat{
+    float: right;
+}
+
+@media screen and (max-width: 1900px)
+{
+    .picture__cat{
+        display: none;
+    }
+}
+
+.galery{
+    display: flexbox;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container__table{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-family: 'Kolker Brush';
+    line-height: 1.5em;
+    font-weight: normal;
+    text-indent: .5em;
+    word-spacing: .2em;
+    font-style: oblique;
+}
+
+#loader{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.game
+{
+    width: 1900px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+#dino
+{
+    width: 50px;
+    height: 50px;
+    background-image: url(dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+#cactus
+{
+    width: 20px;
+    height: 40px;
+    background-image: url(cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 1900px;
+    animation: cactusMove 3s infinite linear;
+}
+@keyframes cactusMove
+{
+    0%
+    {
+        left: 1900px;
+    }
+    100%
+    {
+        left: -20px;
+    }
+}
+.jump
+{
+    animation: jump 0.3s linear;
+}
+@keyframes jump
+{
+    0%
+    {
+        top: 150 px;
+    }
+    10%{
+        top: 136px;
+    }
+    20%{
+        top: 122px;
+    }
+    30%
+    {
+        top: 108px;
+    }
+    40%{
+        top: 94px;
+    }
+    50%
+    {
+        top: 80px;
+    }
+    60%{
+        top: 94px;
+    }
+    70%{
+        top: 108px;
+    }
+    80%
+    {
+        top: 122px;
+    }
+    90%{
+        top: 136px;
+    }
+    100%
+    {
+        top: 150px;
+    }
+}
+
+.wrap{
+    height: 850px;
+}
+
+.footer__dino{
+    height: 30px;
+}
+
+.table{
+    margin-top: 15px;
+    display: grid;
+    padding: 0 10px;
+  }
+  
+  .grid__element{
+    text-align: center;
+    border: 3px ridge;
+    height: 50em;
+  }
+  
+  .grid__element_title{
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+  }
+  
+  .btn__add{
+    background-image: url('btn.jpg');
+    width: 35px;
+    height: 35px;
+  }
+  
+  .task{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+    align-items: center;
+    border: 1px solid;
+    border-color: white;
+  }
+  
+  .table__title{
+    font-family: 'Kolker Brush';
+    font-size: 27px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .btn__delete{
+    background-image: url('cross2.png');
+    width: 20px;
+    height: 20px;
+  }
+  
+  #create__table{
+    display: flex;
+    flex-wrap: wrap;
+  }
