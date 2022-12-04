@@ -6,14 +6,7 @@
 	<meta name="keywords" content="Красильников, Михаил Александрович, Java, junior developer">
 	<link href="src/myStyle.css" rel="stylesheet">
 	<title>Web - программирование</title>
-    <script>
-        var timerStart = Date.now();
-        function ready() {
-                loader.textContent = 'Page load time is ' + (Date.now() - timerStart) / 1000 + ' seconds'
-            }
-      
-            window.addEventListener("load", ready);
-    </script>
+    <script src="loadPage.js"></script>
 </head>
 <body>
     <header>
@@ -24,26 +17,7 @@
 				<a class="menu__link" href="dinosaur.html">Динозавр</a>
 		</nav>
 	</header>
-    <script>
-        var Menu = document.querySelectorAll('#menu a');
-        var path = window.location.pathname;
-        for (let el of Menu) {
-            var href = el.getAttribute('href');
-            var href = el.getAttribute('href');
-			var temp = href.split('/')
-			href = temp[temp.length - 1]
-			temp = path.split('/')
-			path = temp[temp.length - 1]
-            if(path == href){
-                el.classList.add("menu__link_active")
-            }
-            else{
-                if(el.classList.contains("menu__link_active")){
-                    el.classList.remove("menu__link_active")
-                }
-            }
-        }
-    </script>
+    <script src="menu.js"></script>
     <main>
         <article id=aboutMe class="content">
             <h2 class="my__header">О Себе</h2>
