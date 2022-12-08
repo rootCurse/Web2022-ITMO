@@ -19,6 +19,7 @@ main{
     animation: animation 0.7s 10s;
     padding: 0 15px;
     padding-bottom: 15px;
+    min-height: 800px;
 }
 
 
@@ -271,32 +272,32 @@ p{
 }
 
 .table{
-    margin-top: 15px;
     display: grid;
-    padding: 0 10px;
-  }
+    grid-column-gap: 5px;
+}
   
-  .grid__element{
+.grid__element{
     text-align: center;
-    border: 3px ridge;
-    height: 50em;
-  }
+    border: 5px ridge;
+    min-height: 50em;
+}
   
-  .grid__element_title{
+.grid__element_title{
     border-bottom: 1px solid;
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
     align-items: center;
-  }
+    background-color: lightgrey;
+}
   
-  .btn__add{
+.btn__add{
     background-image: url('btn.jpg');
     width: 35px;
     height: 35px;
-  }
+}
   
-  .task{
+.task{
     display: flex;
     justify-content: space-between;
     padding: 5px 15px;
@@ -305,23 +306,123 @@ p{
     align-items: center;
     border: 1px solid;
     border-color: white;
-  }
+}
   
-  .table__title{
-    font-family: 'Kolker Brush';
-    font-size: 27px;
+.table__title{
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+    font-family: 'Kolker Brush';
+    line-height: 1.5em;
+    font-weight: bold;
+    text-indent: .5em;
+    word-spacing: .2em;
+    font-style: oblique;
+    font-size: 32px;
+}
   
-  .btn__delete{
+.btn__delete{
     background-image: url('cross2.png');
     width: 20px;
     height: 20px;
-  }
+}
   
-  #create__table{
+#create__table{
+    box-sizing: border-box;
+    background-color: black;
+    padding: 10px 0;
+    border: 6px solid;
+    border-radius: 6px;
+    border-color: darkgrey;
+    margin:250px 25%;
+    box-shadow: inset 3px 3px 15px lightgray,
+    15px 15px 10px darkgray;
+}
+
+#form__submit{
+    margin-left: 48%;
+    border: 6px groove;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-size: 14px;
+}
+
+#table__title{
+    font-size: 19px;
+    border: 6px groove;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    text-align: center;
+}
+
+#form__days{
+    font-size: 19px;
+    border: 6px groove;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    text-align: center;
+}
+
+label{
     display: flex;
-    flex-wrap: wrap;
-  }
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px;
+    margin: 20px 0;
+}
+
+.label__title{
+    font-family: 'Kolker Brush';
+    line-height: 1.5em;
+    font-weight: normal;
+    text-indent: .5em;
+    word-spacing: .2em;
+    font-style: oblique;
+    font-size: 21px;
+    color: white;
+}
+
+#task__title{
+    font-size: 19px;
+    border: 6px ridge;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    border-color: darkgrey;
+    text-align: center;
+    margin-right: 5px;
+}
+
+#create__task{
+    border: 6px ridge;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    border-color: darkgrey;
+    font-size: 19px;
+}
+
+.parent__popup_invisible{
+    display: none;
+}
+
+.parent__popup_visible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+  

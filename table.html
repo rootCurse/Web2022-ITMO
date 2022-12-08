@@ -7,6 +7,7 @@
 	<link href="src/myStyle.css" rel="stylesheet">
 	<title>Web - программирование</title>
 	<script src="loadPage.js"></script>
+    <script src="menu.js"></script>
 </head>
 <body>
 	<header>
@@ -18,21 +19,42 @@
                 <a class="menu__link" href="table.html">Таблица</a>
 		</nav>
 	</header>
-    <script src="menu.js"></script>
     <main>
-        <form name="create__table" id="create__table">
-            <input type="text" name="table__title" id="table__title" placeholder="Title for your table">
-            <select name="days" id="form__days">
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-            </select>
-            <button type="submit" id="form__submit">Create table</button>
-        </form>
+        <div class="wrapper">
+            <form name="create__table" id="create__table">
+                <label>
+                    <div class="label__title">Название таблицы</div>
+                    <input type="text" name="table__title" id="table__title" placeholder="Title for your table">
+                </label>
+                <label>
+                    <div class="label__title">Количество дней</div>
+                    <select name="days" id="form__days">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </label>
+                <button type="submit" id="form__submit">Create table</button>
+            </form>
+        </div>
+        <template id = "template__table_column">
+            <div class="grid__element">
+                <div class="grid__element_title">
+                    <h3 class="column__title"></h3>
+                    <button class='btn__add'></button>
+                </div>
+            </div>
+        </template>
+        <template id = "template__table_task">
+            <div class="task">
+                <div class="task__name"></div>
+                <button class='btn__delete'></button>
+            </div>
+        </template>
       <script src="constructor.js"></script>
       <script src="btnHandler.js"></script>
     </main>
