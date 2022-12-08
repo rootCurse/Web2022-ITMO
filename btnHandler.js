@@ -4,7 +4,7 @@ document.addEventListener('click', function(evt){
         let input = document.querySelector('#form__input');
         let popup = document.querySelector('div.parent__popup_invisible');
         popup.className = "parent__popup_visible";
-        let element = evt.target;
+        let container = evt.target.parentElement.parentElement;
         input.addEventListener('submit', function(evt_sub){
             evt_sub.preventDefault();
             let data = new FormData(input);
@@ -12,13 +12,13 @@ document.addEventListener('click', function(evt){
                 popup.className = "parent__popup_invisible";
                 return;
             }
-            let container = element.parentElement.parentElement;
             let templ = document.querySelector("#template__table_task");
             let newNode = document.importNode(templ.content, true);
             newNode.querySelector('.task__name').textContent = data.get('task__title');
             container.appendChild(newNode);
+            newNode = null;
             popup.className = "parent__popup_invisible";
-        })
+        }, {once:true,})
     }
     if(evt.target.matches('.btn__delete')) {
         evt.preventDefault();
