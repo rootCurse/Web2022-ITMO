@@ -425,4 +425,16 @@ label{
     top: 0;
     left: 0;
 }
-  
+ 
+#table__restore{
+    position: fixed;
+    right: 30px;
+    bottom: 80px;
+    z-index: 100000;
+    border: 6px groove;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-size: 18px;
+}
