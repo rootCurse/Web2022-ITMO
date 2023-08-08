@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Красильников, Михаил Александрович, Java, junior developer">
+	<link href="src/myStyle.css" rel="stylesheet">
+	<title>Web - программирование</title>
+	<script src="loadPage.js"></script>
+    <script src="menu.js"></script>
+</head>
+<body>
+	<header>
+		<h1 class="title">Junior Java developer</h1>
+		<nav id="menu">
+				<a class="menu__link" href="index.html">Резюме</a>
+				<a class="menu__link" href="about.html">Обо мне</a>
+				<a class="menu__link" href="dinosaur.html">Динозавр</a>
+                <a class="menu__link" href="table.html">Таблица</a>
+		</nav>
+	</header>
+    <main>
+        <div class="wrapper">
+            <form name="create__table" id="create__table">
+                <label>
+                    <div class="label__title">Название таблицы</div>
+                    <input type="text" name="table__title" id="table__title" placeholder="Title for your table">
+                </label>
+                <label>
+                    <div class="label__title">Количество дней</div>
+                    <select name="days" id="form__days">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </label>
+                <button type="submit" id="form__submit">Create table</button>
+            </form>
+            <button id="table__restore">Восстановить последнюю таблицу</button>
+        </div>
+        <template id = "template__table_column">
+            <div class="grid__element">
+                <div class="grid__element_title">
+                    <h3 class="column__title"></h3>
+                    <button class='btn__add'></button>
+                </div>
+            </div>
+        </template>
+        <template id = "template__table_task">
+            <div class="task">
+                <div class="task__name"></div>
+                <button class='btn__delete'></button>
+            </div>
+        </template>
+      <script src="constructor.js"></script>
+      <script src="btnHandler.js"></script>
+    </main>
+    <footer>
+		<nav class="footer__contacts">
+					<a class="footer__contact" href="tel:+78001000800">+7 (800) 100-08-00</a>
+					<a class="footer__contact" href="mailto:311543@niuitmo.ru">311543@niuitmo.ru</a>
+					<a class="footer__contact" href="https://github.com/rootCurse">https://github.com/rootCurse</a>
+		</nav>
+		<div id="loader">
+            <p></p>
+        </div>
+	</footer>
